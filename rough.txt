@@ -1,0 +1,14 @@
+1, Initialize Your Backend Environment
+ with installs
+2, edits in package.json for scripts
+3, .env , environment links
+4, src/config/db.js , setup of mongoose database
+5, src/models/habit.model.js ,schema acts as a contract for what fields are allowed, their data types, and validation rules
+
+In MongoDB, Mongoose needs model files (habit.model.js) to define schemas and validate fields before saving documents.
+In MySQL, your database tables (habits and habit_logs) are the schema. MySQL handles data types, default values, and foreign keys directly on the database engine.
+
+6, src/controllers/habit.controller.js, Controllers extract data from the incoming request (req.body, req.params), interact with the database model, and send an HTTP response (res).
+7, src/routes/habit.routes.js , for adding routes so that from server to controller a connection establish using express 
+8, server.js , work as root base 
+9, in package.json , check the main: it should be the correct name to start 
