@@ -2,7 +2,7 @@
  with installs
 2, edits in package.json for scripts
 3, .env , environment links
-4, src/config/db.js , setup of mongoose database
+4, src/config/db.js , setup of database
 5, src/models/habit.model.js ,schema acts as a contract for what fields are allowed, their data types, and validation rules
 
 In MongoDB, Mongoose needs model files (habit.model.js) to define schemas and validate fields before saving documents.
